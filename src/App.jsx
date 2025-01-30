@@ -16,7 +16,7 @@ useEffect(() => {
   const fetchWeatherData = async () => {
  /*    if (city) { */
       try {
-        const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`);
+        const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`);
         if (!response.ok) {
           throw new Error('Weather data not available');
         }
